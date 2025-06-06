@@ -651,26 +651,28 @@ ul {
 .footer-input {
   width: 264px;
   height: 40px;
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid #ffffff;
   border-radius: 4px;
   background-color: transparent;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   letter-spacing: 0.04em;
   vertical-align: middle;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .footer-form {
   display: flex;
   gap: 24px;
+  align-items: center;
 }
 .footer-input::placeholder {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.04em;
   vertical-align: middle;
-  color: rgba(255, 255, 255, 1);
-  padding-left: 16px;
+  color: #ffffff;
 }
 .container-media-icon {
   display: flex;
@@ -683,12 +685,30 @@ ul {
   height: 40px;
   padding: 8px 24px;
   border-radius: 4px;
-  background-color: rgba(77, 90, 229, 1);
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   vertical-align: middle;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.footer-btn-icon {
+  margin-left: 16px;
+  fill: white;
+}
+.subscribe-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
