@@ -592,9 +592,6 @@ ul {
 .modal-input:focus + .modal-input-icon {
   fill: #4d5ae5;
 }
-.user-name-input,
-.user-phone-input,
-.user-email-input,
 .modal-input-text {
   display: block;
   margin-bottom: 4px;
@@ -680,11 +677,6 @@ ul {
 .check-link {
   color: #4d5ae5;
 }
-.modal-check:checked + .check-text .check-element {
-  background-color: rgba(64, 75, 191, 1);
-  border: none;
-  fill: #f4f4fd;
-}
 .modal-check {
   position: absolute;
   opacity: 0;
@@ -696,6 +688,11 @@ ul {
   clip: rect(0 0 0 0);
   white-space: nowrap;
   border: 0;
+}
+.modal-check:checked + .check-text .check-element {
+  background-color: rgba(64, 75, 191, 1);
+  border: none;
+  fill: #f4f4fd;
 }
 .modal-form-btn {
   font-family: "Roboto", sans-serif;
@@ -712,7 +709,6 @@ ul {
   border: none;
   cursor: pointer;
 }
-
 .footer-input {
   width: 264px;
   height: 40px;
