@@ -526,7 +526,7 @@
         <div class="container-media-subscribe">
           <p class="subscribe-text">Subscribe</p>
           <form class="footer-form">
-            <label aria-label="footer-email">
+            <label aria-label="footer-email" class="footer-email-form">
               <input
                 type="email"
                 name="footer-email"
@@ -565,7 +565,7 @@
                 name="user-name"
                 id="user-name"
               />
-              <svg class="modal-input-icon">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use
                   href="./images/icons.svg#icon-Name"
                   width="18"
@@ -573,6 +573,8 @@
                 />
               </svg>
             </div>
+          </div>
+          <div class="modal-field">
             <label for="user-phone" class="user-phone-input">Phone</label>
             <div class="modal-input-cover">
               <input
@@ -589,6 +591,8 @@
                 />
               </svg>
             </div>
+          </div>
+          <div class="modal-field">
             <label for="user-email" class="user-email-input">Email</label>
             <div class="modal-input-cover">
               <input
@@ -605,31 +609,31 @@
                 />
               </svg>
             </div>
+          </div>
+          <div class="modal-input-comment">
             <label for="user-text" class="modal-input-text">Comment</label>
-            <div class="modal-comment">
-              <textarea
-                class="modal-textarea modal-item"
-                name="user-text"
-                id="user-text"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-            <div class="modal-field">
+            <textarea
+              class="modal-textarea modal-item"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+            <div class="modal-field-comment">
               <input
                 type="checkbox"
-                name="policy"
-                id="policy"
-                class="modal-check"
+                name="user-privacy"
+                id="user-privacy"
+                class="modal-check visually-hidden"
                 value="true"
               />
-              <label for="policy" class="check-text"
+              <label for="user-privacy" class="check-text"
                 ><span class="check-element"
                   ><svg class="check-icon" width="10" height="8">
                     <use href="./images/icons.svg#icon-check"></use>
                   </svg>
                 </span>
                 I accept the terms and conditions of the
-                <a href="">Privacy Policy</a>
+                <a href="#" class="check-link">Privacy Policy</a>
               </label>
             </div>
             <button type="submit">Send</button>
